@@ -6,34 +6,39 @@ font-family: 'Lexend Deca', sans-serif; */
 
 /* reset */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.container{
-   border-radius: 8px;
-    width: 80%;
-  
+.container {
+    border-radius: 8px;
+    width: 70%;
+
 }
-.card h3{
+
+.card h3 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 20px;
 }
 
-.card p{
+.card p {
     color: aliceblue;
     line-height: 25px;
     font-family: 'Lexend Deca', sans-serif;
@@ -41,7 +46,8 @@ body{
     margin-bottom: 60px;
 
 }
-button{
+
+button {
     border: 0;
     width: 180px;
     height: 45px;
@@ -51,29 +57,31 @@ button{
 }
 
 
-button:hover{
+button:hover {
     opacity: 0.8;
 }
 
-button:active{
+button:active {
     transform: scale(1.1);
 }
-.container .cards{
+
+.container .cards {
     display: flex;
     justify-content: center;
-    
+
 }
+
 /* Card -1  */
-.cards .card-1{
+.cards .card-1 {
     background-color: hsl(31, 77%, 52%);
-   padding: 20px 40px;
-   color: #fff;
-   border-radius: 8px 0 0 8px;
-  
+    padding: 20px 40px;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+
 
 }
 
-.card-1 .icon{
+.card-1 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -82,88 +90,108 @@ button:active{
 
 }
 
-.card-1 .icon::before{
+.card-1 .icon::before {
     content: url(./images/icon-sedans.svg);
     position: absolute;
-    
+
 }
 
 
 
 
-.card-1 button{
-    color:  hsl(31, 77%, 52%);
-    
+.card-1 button {
+    color: hsl(31, 77%, 52%);
+
 }
 
 /* Card -2  */
 
-.cards .card-2 .icon{
+.cards .card-2 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 20px;
     position: relative;
 }
-.card-2 .icon::before{
+
+.card-2 .icon::before {
     content: url(./images/icon-suvs.svg);
     position: absolute;
-    
+
 }
 
-.cards .card-2{
+.cards .card-2 {
     background-color: hsl(184, 100%, 22%);
     padding: 20px 40px;
     color: #fff;
-   
+
 
 }
 
 
-.card-2 button{
+.card-2 button {
     color: hsl(184, 100%, 22%);
-    
-    
+
+
 }
 
 /* Card -3  */
 
-.cards .card-3 .icon{
+.cards .card-3 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 20px;
     position: relative;
 }
-.card-3 .icon::before{
+
+.card-3 .icon::before {
     content: url(./images/icon-luxury.svg);
     position: absolute;
-    
+
 }
 
-.cards .card-3{
-    background-color:hsl(179, 100%, 13%);
+.cards .card-3 {
+    background-color: hsl(179, 100%, 13%);
     padding: 20px 40px;
     color: #fff;
- 
+
     border-radius: 0px 8px 8px 0;
 
 }
 
-.card-3 button{
+.card-3 button {
     color: hsl(179, 100%, 13%);
-    
-    
+
+
 }
+
 @media screen and (max-width: 600px) {
-.container{
-    width: 80%;
-    height: 100vh;
-   
-}
-.container .cards{
-    flex-direction: column;
-}
+
+    body {
+        padding: 2rem 0 ;
+    }
+
+    .container {
+        width: 80%;
+        height: 90%;
+
+
+
+    }
+
+    .cards .card-1 {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .cards .card-3 {
+        border-radius: 0 0 8px 8px;
+        margin-bottom: 2rem;
+    }
+
+    .container .cards {
+        flex-direction: column;
+    }
 
 
 }
